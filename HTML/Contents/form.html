@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Form</title>
+		<style>
+			.ibutton{
+				border-radius: 5px;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Form</h1>
+		<form action="Address" method="post">	<!-- method: "post" is secure, large data delivery, but slow
+															 "get" is unsecure, small data delivery, but fast than post. -->
+			<div>	<!--  <div> division	-->
+				<label for="txt">Text Input</label>
+				<input type="text" id="txt" name="txt">
+			</div>
+			<br>
+			<div>
+				<label for="pwd">Password</label>
+				<input type="password" id="pwd" name="pwd">
+			</div>
+			<br>
+			<div>
+				<label for="ddl">Dropdown List</label>
+				<select id="ddl" name="ddl">
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label for="lst">List </label>
+				<select id="lst" name="lst" multiple>
+					<option value="1">Option1</option>
+					<option value="2">Option2</option>
+					<option value="3">Option3</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label for="chk1">Box 1</label>
+				<input type="checkbox" value="c1" id="chk1" name="chk1">
+				<label for="chk2">Box 2</label>
+				<input type="checkbox" value="c2" id="chk2" name="chk2">
+				<label for="chk3">Box 3</label>
+				<input type="checkbox" value="c3" id="chk3" name="chk3">
+			</div>
+			<br>
+			<div>
+				<label for="rdo1">Radio Box1</label>
+				<input type="radio" value="rdo1" id="rdo1" name="rdo">
+				<label for="rdo2">Radio Box2</label>
+				<input type="radio" value="rdo2" id="rdo2" name="rdo">
+				<label for="rdo3">Radio Box3</label>
+				<input type="radio" value="rdo3" id="rdo3" name="rdo">
+			</div>
+			<br>
+			<div>
+				<input class="ibutton" type="button" id="btn" name="btn" value="button">
+				<input class="ibutton" type="reset" id="rst" name="rst" value="reset">
+				<input class="ibutton" type="submit" id="submit" name="submit" value="submit">
+			</div>
+		</form>
+	</body>
+</html>

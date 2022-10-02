@@ -8,6 +8,22 @@
             ១,២,៣ ទាំងអស់ផ្សំគ្នាគឹធាតុ element
         -->
             <title>ទំព័រ Home</title>
+            <style type="text/css">
+                ul{
+                    background-color: lightgray;
+                }
+                li,a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 1em 1.5em;
+                }
+                li{
+                    display: inline;
+                }
+                #active{
+                    background-color: black; color: white; border-radius: 5px;
+                }
+            </style>
     
         </head>
         <body>
@@ -17,7 +33,7 @@
             <!-- anchor បង្កើតតំណ(Link)ទៅកាន់វេបផេកបានអាស័យដ្ធានក្នុង href-->
             
             <ul>
-                <li><a href="Contents/head and text.html">Head and Text</a></li>
+                <li><a id="active" href="Contents/head and text.html">Head and Text</a></li>
                 <li><a href="Contents/head and text.html">Head and Text</a></li>
                 <li><a href="Contents/Formating text.html">Formating Text</a></li>
             </ul>
