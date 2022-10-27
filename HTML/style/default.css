@@ -22,6 +22,15 @@ ul, ol, table, form, p{
 	display: inline-block;
 	width: 14%;
 }
+/* photo album css style */
+.cover{width: 502px; height: 352px; margin: 16px auto;}
+#feature {width: 500px; height: 350px; border: 1px solid black;}
+#caption{text-align: center; color: rgb(4, 0, 0);}
+.album img{ width: 100px; height: 45px;}
+.album li{display: inline-block;}
+.album li:nth-child(n + 2){margin-left: -5px;}
+.album li:nth-child(1){border-left: 3px solid red}
+
 .hmenu a{
 	display: block;
 	text-align: center;

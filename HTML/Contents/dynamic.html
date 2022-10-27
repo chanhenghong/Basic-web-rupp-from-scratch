@@ -15,5 +15,29 @@
 			<span id="date">Current Date:</span>
 			<span id="time">Current Time</span>
 		</div>
+		<script>
+			
+			document.getElementById("date").textContent = new Date().toDateString();
+					// "document" is HTMNL document(web page)	
+					// "getEmlementById" is method for choose element that have id
+					// "textContent" is property for set new content to element or get content from element
+					// "newDate()" create date object that have date and current time
+					// "toDateString()" is method convert date to string
+			
+			let spanDate = document.getElementById("date");
+			let today = new Date().toDateString();
+			spanDate.textContent = today;
+			
+					// let is keyword for create variable tha have name.
+					// note: in javascript when u create variable no need to create type.
+					
+					
+			function currentTime () {
+				document.getElementById("time").textContent = 
+				new Date().toLocaleTimeString();
+			}
+			window.setInterval(currentTime, 500)
+					
+		</script>
 	</body>
 </html>

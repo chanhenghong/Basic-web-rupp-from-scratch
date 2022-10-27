@@ -25,7 +25,8 @@
                 <li><img src="../Images/RUPP4.jpg"alt="CJCC"></li>
                 <li><img src="../Images/RUPP5.jpg"alt="CKCC"></li>
             </ul>
-            <p id="dynamic"></p>
+			
+            <p id="dynamic" onclick="alert('Click tag p')">Click</p>
         </div>                                                      
         <script>
             /*let imgs=document.querySelectorAll(".album img");
@@ -54,17 +55,7 @@
                 }
                 
             },1000);*/
-            window.setInterval(function(){
-                document.querySelector(".album li:nth-child(5)").style.borderLeft="none";
-                document.querySelector(".album li:nth-child("+i+")").style.borderLeft="none";
-
-                caption.textContent=imgs[i].getAttribute("src");
-                feature.setAttribute("src",imgs[i++].getAttribute("src"));
-                document.querySelector(".album li:nth-child("+i+")").style.borderLeft="3px solid red";
-                
-            },1000);
-           
-
+            
         </script>
     </body>
 </html>
