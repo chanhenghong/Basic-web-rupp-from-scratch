@@ -19,14 +19,15 @@
             <img id="feature" src="../Images/RUPP1.jpg" alt="អាគារ A">
             <p id="caption">អគារ A</p>
             <ul class="album">
-                <li><img src="../Images/RUPP1.jpg"alt="អគារ A"></li>
-                <li><img src="../Images/RUPP2.jpg"alt="អគារដំបូលទូកនាពេលរាត្រី"></li>
+                <li><img src="../Images/RUPP1.jpeg"alt="អគារ A"></li>
+                <li><img src="../Images/RUPP2.jpeg"alt="អគារដំបូលទូកនាពេលរាត្រី"></li>
                 <li><img src="../Images/RUPP3.jpg"alt="វិទ្យាស្ថានភាសាបរទេស"></li>
                 <li><img src="../Images/RUPP4.jpg"alt="CJCC"></li>
                 <li><img src="../Images/RUPP5.jpg"alt="CKCC"></li>
             </ul>
 			
             <p id="dynamic" onclick="alert('Click tag p')">Click</p>
+			
         </div>                                                      
         <script>
             /*let imgs=document.querySelectorAll(".album img");
@@ -46,7 +47,20 @@
             let feature =document.querySelector("#feature");
             let caption=document.querySelector("#caption");
             let imgs=document.querySelectorAll(".album img");
-            let i=1;
+			
+			caption.onclick=function(){caption.textContent="Click on title pic"}
+			
+			feature.addEventListener("click", function(){
+				caption.textContent="Click on Primary picture"
+			})
+			
+			//Tip 
+			imgs.forEach(function(img, i){
+				img.addEventListener("click", function(){
+					caption.textContent=img.getAttribute("alt");
+					feature.setAttribute('src', img.getAttribute('src'));
+				});
+			})
             /*window.setInterval(function(){
                 caption.textContent=imgs[i].getAttribute("alt");
                 feature.setAttribute("src",imgs[i++].getAttribute("src"));

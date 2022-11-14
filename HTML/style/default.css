@@ -1,102 +1,39 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-html{
-	font: 16px suwannaphum, 'khmern os siemreap';
-}
-h1, h2, h3, h4, h5, h6{
-	margin: 16px 0; 
-	font-family: 'khmer OS Muol Light';
-	padding-left: 48px;
-}
-ul, ol, table, form, p{
-	padding-left: 80px;
-}
-.hmenu{
-	list-style-type: none;
-	background-color: black;
-	padding: 8px;
-}
-.hmenu li{
-	display: inline-block;
-	width: 14%;
-}
-/* photo album css style */
-.cover{width: 502px; height: 352px; margin: 16px auto;}
-#feature {width: 500px; height: 350px; border: 1px solid black;}
-#caption{text-align: center; color: rgb(4, 0, 0);}
-.album img{ width: 100px; height: 45px;}
+*{margin: 0;padding:0;}
+html{font:16px suwannaphum,'khmer os siemreap';}
+h1,h2,h3,h4,h5,h6{margin:16px 0;font-family: 'khmer OS Muol Light';padding-left: 48px;}
+ul,ol,table,form,p{padding-left: 80px;}
+
+.hmenu{list-style-type: none;background-color: black;padding:8px;}
+.hmenu li{display:inline-block;width:14%;} /*100%/7elements*/
+.hmenu a{display: block;text-align: center;text-decoration: none; color:white;border-radius: 6px;padding:12px 0 8px;}
+
+.hmenu a:hover{background-color: gray;}
+.hmenu a:active{color: yellow;} 
+
+/*.album{list-style: none;width:300px;margin:0px auto;padding:0px;}
+.album img{width:  50px;height: 40px;border-radius: 6px;}
 .album li{display: inline-block;}
-.album li:nth-child(n + 2){margin-left: -5px;}
-.album li:nth-child(1){border-left: 3px solid red}
+#feature{width: 500px;margin:0 auto;display: block;}
+#caption{width:50px;margin: 0 auto;padding: 0;}
+#dynamic{margin-top: 50px;}*/
 
-.hmenu a{
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	border-radius: 6px;
-	padding: 12px 0 8px;
-}
-.hmenu a:hover{
-	background-color: gray;
-}
-.album {
-	list-style: none;
-	width: 600px;
-	margin: 0 auto;
-}
-.album img {
-	width: 600px;
-	height: 350px;
-	border-radius: 6px;
-}
-#tbl {
-	width: 450px;
-	margin: 16px auto 0;
-	border-collapse: collapse;
-}
-#tbl th, #tbl td {
-	padding: 8px 16px;
-}
-#tbl th:nth-child(1) {
-	border-top-left-radius: 8px;
-}
-#tbl th:nth-child(3) {
-	border-top-right-radius: 8px;
-}
-#tbl tr:nth-child(1) {
-	font-family: 'Khmer OS Muol Light';
-	background-color: black;
-	color: white;
-}
-#tbl tr:nth-child(2n) {
-	background-color: lightgrey;
-}
-#frm {
-	width: 418px;
-	margin: 16px auto;
-	border: 1px solid gray;
-	border-radius: 8px;
-	padding: 0 24px 24px 32px;
-}
+/*photo album CSS Style*/
+.cover{width:502px;height: 352px;margin: 16px auto;}
+#feature{width: 500px;height: 350px; border: 1px solid black;border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+#caption{text-align: center;color:white;padding-left: 0;margin-top: -39px;}
 
-#frm h2 {
-	margin: 0 0 16px auto;
-	padding: 12px 0 4px;
-	background-color: black;
-	text-align: center;
-	color: white;
-}
-#frm label {
-	display: inline-block;
-	width: 131px;
-}
-#chk label, #rdo label {
-	display: 131px;
-}
-.ibutton{
-	width: 31%;
-	margin: 8px 5px 0 0;
-}
+.album{list-style-type: none;padding-left: 0;border-top: 5px solid black;}
+.album li{display: inline-block;}
+.album li:nth-child(n+2){margin-left:-5px;}
+.album li:nth-child(1){border-left: 3px solid red;}
+.album img{width:100px;height: 45px;}
+
+#tbl{width: 450px;margin:16px auto 0;border-collapse: collapse;}
+#tbl th:nth-child(1){border-top-left-radius: 8px;}
+#tbl th:nth-child(3){border-top-right-radius:8px ;}
+#tbl tr:nth-child(1){font-family: 'Khmer OS Muol Light';background-color: black;color:white;}
+#tbl tr:nth-child(2n){background-color: lightgrey;}
+
+#frm{width: 418px;margin:16px auto;border:1px solid gray;border-radius:8px;padding:0 24px 24px 32px;}
+#chk label, #rdo label{display: inline;}
+.ibutton{width:31%;margin:8px 5px 0 0;}
